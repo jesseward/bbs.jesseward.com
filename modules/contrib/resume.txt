@@ -1,135 +1,124 @@
-|01Jesse Ward                                                     February 17, 2015
-|01jesse@jesseward.com                                            www.jesseward.com
-|01github.com/jesseward
+|04 Jesse Ward SYSTEMS ENGINEER · SOFTWARE DEVELOPER
+|04 385 River Oaks Parkway, San Jose, California, USA (650) 933-7441
+|04 jesse@jesseward.com www.jesseward.com | jesseward
 
+|06Summary 
+A technologist, systems engineer and software developer specializing in
+the design and support of large scale and highly distributed systems. I thrive
+by pulling complex systems apart and studying problems or design from the ground
+up.
 
- |01Education
+|06Experience
 
-      Conestoga College                                            Kitchener, ON
-  •
-      Diploma, Computer Programmer                                     2000-2002
-        – Relevant courses: Database design, Systems programming in C, Object 
-          Oriented Design (Java I, II, III)
+|04LinkedIn Sunnyvale, California STAFF SITE RELIABILITY ENGINEER - DATA
+|04(RELEVANCE, SOCIAL GRAPH, SEARCH, ANALYTICS) Oct. 2015 - PRESENT
 
- |01Skills
+• Led effort to bring a new Asia Pacific data-center into production rotation. I
+  was lead for the Relevance and Analytics services (People You May Know, Jobs You
+  May Be Interested In, Sponsored Jobs are a few examples).
+• Active member of the Linkedin Site Reliability Steering Committee (SRSC), which 
+  oversees policyand recommendations for infrastructure operability at LinkedIn.
+• Member of the Site Reliability interview team. Ensuring a pipeline of highly skilled
+  candidates are always available.  • Technical lead in the Data SRE organization.
+  Making our infrastructure scale to support 500+ million users.
 
-  • Development: Proficient in Python, PHP, golang and shell scripting (BASH).
-  • System Administration: Highly experienced in Linux systems administration,
-    particularly with Red Hat Enterprise Linux and SuSe Linux Enterprise Server.
-    Also experienced in SUN Solaris administration (on SPARC architecture).
-  • Web technologies: Solid experience deploying and tuning large scale 
-    installations of Apache Server, Apache Tomcat, Eclipse Jetty, Bea (Oracle)
-    Weblogic. Strong focus on load distribution at both layers 4 and 7 with
-    services such as the F5 Local Traffic Manager, NGiNX. Advanced knowledge of
-    the Python based Django and Bottle web development frameworks.
-  • Database technologies: Thorough understanding of the Oracle, PostgreSQL and
-    MySQL database platforms, and a solid foundation in SQL.
-  • Virtualization: Solid foundation in VMWare ideologies and best practices.
-    Experience designing, deploying and administering many VMware environments.
-    Includes early versions of GSX, up to current vCenter w/ ESXi v5 hosts.
+|04LinkedIn Mountain View, California SENIOR SITE RELIABILITY ENGINEER - SEARCH,
+|04NETWORK, ANALYTICS Feb. 2014 - Oct. 2015
 
- |01Work Experience
+• Wrote a tool that monitors network traﬀic, aggregates statistics and
+  optionally mirrors payload to a remote endpoint for real-time protocol analysis.
+  Including libraries that interact with libpcap, pfring and libcurses. (GO).  
+• Wrote a pair of RestLi protocol dissectors that capture meta-data for LinkedIn’s
+  distributed load-balancing infrastructure (PYTHON).  
+• Developed a client library for LinkedIn’s autometrics (monitoring) 
+  infrastructure (GO).  
+• Embedded Site Reliability Engineer for the Relevance, Social Graph and 
+  Standardization engineering organizations. We build, scale and support hundreds
+  of distributed and highly available services that power LinkedIn.com. These are high
+  performance (hundreds of thousands queries per second / low latency) back-end
+  services. Seamlessly sizing for 250+ million users across thousands of machines.
 
-      LinkedIn                                                 Mountain View, CA
-  •
-      Senior SRE - Graph and Analytics                   February 2014 - current
-        – Supporting infrastructure that provides LinkedIn’s recommendation and
-          relevance systems. Ensuring services scale and remain responsive.
+|04BlackBerry Waterloo, Ontario SYSTEM ENGINEER - LAWFUL ACCESS SYSTEMS Oct. 2010 -
+|04Feb. 2014
 
-      BlackBerry                                                    Waterloo, ON
-  •
-      Systems Engineer - Lawful Access Systems      October 2010 - February 2014
-        – Responsible for architecture and design, deployment and sizing for 10s
-          of millions of users, configuration, monitoring, maintenance and
-          support of the BlackBerry global Lawful Access  infrastructure and 
-          application suite. Operational and On-Call duties include  application
-          and system performance investigation, planning and deployment of system
-          wide upgrades.
-        – Wrote a network protocol and binary file format analysis tool that
-          allows users to read and parse or inject sample data into the network
-          stream. These tools aid in the reassembly of numerous protocols and
-          their payload (both open RFC standards and BlackBerry proprietary).
-          Portions of this work was committed to upstream open source projects.
-        – Developed a light-weight configuration management tool in python that
-          automates deployment and configuration of software packages targeted
-          for Red Hat Enterprise Linux hosts.
-        – Researched and then deployed various types of load-balancing 
-          solutions for our unique set of tools. Solutions were comprised of
-          the following technologies : standard HTTP balancing (and static 
-          caches) via NGiNX, TCP pooling (with TLS) via HA-Proxy, as well as IP
-          fail-over via uCarp.
-        – Designed, deployed and administered two VMWare lab environments.
-          Both clusters consist of 10GbE network infrastructure, NetApp FAS NFS
-          storage, IBM BladeCenter and Blade Series server architecture.
-        – Led the launch of the BlackBerry 10 product from the Lawful Access
-          perspective. Designed and deployed Lawful Access infrastructure for a
-          handful of high-profile partners.
-        – Wrote numerous web services built on top of Django as well as the
-          Bottle web frameworks. These tools range from simple HTTP status code
-          based APIs to full stack web applications calling message queues
-          (Celery + Redis), persisting data into a relational database
-          (PostgreSQL) and dynamically rendering the user interface (JQuery)
-        – Led an initiative to migrate legacy web and network based
-          applications into the BlackBerry private cloud infrastructure (Open
-          Nebula). Tasks included : implementation of a configuration management
-          solution (saltstack and Ansible), developing a solution for load
-          balancing (round-robin dynamic dns + custom health check web api) and
-          monitoring (ZenOss) and metrics (Graphite) solutions.
+• Responsible for architecture and design, deployment and sizing for 50+ million
+  users, configuration, monitoring, maintenance and support of the BlackBerry
+  global Lawful Access infrastructure and application suite. Operational and
+  On-Call duties include : application and system performance investigation,
+  planning and deployment of system wide upgrades.
+• Led the launch of the BlackBerry 10 product from the Lawful Access perspective.
+  Designed and deployed Lawful Access infrastructure for a handful of
+  high-profile partners.  
+• Wrote a network protocol and binary file format analysis tool that allows 
+  users to read and parse or inject sample data into the network stream.  These
+  tools aid in the reassembly of numerous protocols and their payload (both 
+  open RFC standards and BlackBerry proprietary). Portions of this work was 
+  committed to upstream open source projects (PYTHON).
+• Wrote many tools and services to automate daily tasks. These tools ranged 
+  from configuration management plugins using Saltstack, web services (Django,
+  Bottle) controlling virtualized (VMWare, Xen/KVM) infrastructure. These 
+  tools maintained interoperability with many technologies including messaging
+  queues (RabbitMQ), relational data stores (PostgreSQL, Oracle, MySQL), 
+  key-value caches (Redis, Cassandra) and dynamic discovery (ZooKeeper).
 
-    Research In Motion (BlackBerry)                                 Waterloo, ON
-•
-    Team Lead - Infrastructure Engineering              June 2002 - October 2010
-      – Led a team of five high performing system engineers.
-      – Responsible for a set of labs within the BlackBerry infrastructure
-        organization that support next-generation BlackBerry service offerings.
-        The presence of these labs have assisted in the deployment BlackBerry
-        (core infrastructure) services to hundreds of RIM partners (mobile
-        network operators such as Verizon, China Mobile, Vodafone UK, Etisalat
-        UAE).
-      – Deployed and administered wireless messaging platform(s). These
-        systems tightly interface with over 300 mobile network carriers
-        worldwide and serve as the core backbone for BlackBerry data services.
-        This provided seamless integration with the cellular IP services routed
-        via CDMA, GSM and iDEN telecommunication networks.
-      – Responsible for the administration and Tier III support of hundreds of
-        UNIX (Solaris), Linux (Red Hat / SuSe), and MS Windows servers across
-        multiple datcenters. This involves performance tuning, capacity planning
-        and maintaining 24/7 availability of these systems.
-      – Led several initiatives to reduce hardware cost, by moving targeted
-        services to virtualized infrastructure running VMWare ESX, ESXi 4 and
-        vCenter. Responsibility entailed the datacenter design, hardware
-        selection, deployment and on-going support of the VMware clusters.
-      – Designed many aspects of the BlackBerry Engineering labs. This
-        included the capacity planning for future expansion, decisions on
-        hardware architecture, and monitoring of these systems.
-      – Wrote numerous plug-ins for the Nagios monitoring suite, in various
-        scripting language (python, bash and php). Endpoints varying from VMWare
-        hosts, SNMP targets, log scraping,Oracle result sets, NGiNX health
-        metrics
+|04Research in Motion (BlackBerry) Waterloo, Ontario TEAM LEAD, BLACKBERRY
+|04INFRASTRUCTURE ENGINEERING Jun. 2002 - Oct. 2010
 
-    Sentex Data Communications                                    Cambridge, ON
-•
-    Systems Administrator and Technical Support            June 2001 - July 2002
-      – Member of a team that was responsible for the day-to-day system
-        administration and customer facing support duties of the Internet
-        Service Provider. Duties include DNS zone file administration (Bind),
-        Sendmail administration, and Apache virtual host configuration and
-        management.
+• Led a team of five high performing system engineers.
+• Responsible for a set of labs within BlackBerry Infrastructure that support
+  next-generation BlackBerry service oﬀerings. Presence of these labs have assisted
+  in the deployment BlackBerry (core infrastructure) services to hundreds of RIM 
+  partners (mobile network operators such as Verizon, China Mobile, Vodafone UK,
+  Etisalat UAE).
+• Owned administration and Tier III support of thousands of UNIX (Solaris), Linux
+  (Red Hat / SuSe), and MS Windows servers across multiple data-centers. This
+  involves performance tuning, capacity planning, and maintaining 24/7
+  availability of these systems.  
+• Administered wireless messaging platform(s). These systems tightly interface 
+  with over 300 mobile network carriers worldwide and serve as the core backbone
+  for BlackBerry data services. This provided seamless integration with the
+  cellular IP services routed via CDMA, GSM and iDEN telecommunication networks.
+• Led several initiatives to reduce hardware cost, by moving targeted services
+  to virtualized infrastructure running VMWare ESX, ESXi 4 and vCenter.
+  Responsibility entailed the data-center design, hardware selection, deployment
+  and on-going support of the VMware clusters.
 
-|01 Selected Open Source Projects
+|04Sentex Communications Cambridge, Ontario UNIX SYSTEM ADMINISTRATOR Jun. 2001 -
+|04Jul. 2002
 
+• Member of a team that was responsible for the day-to-day system administration
+  and customer facing support duties of the Internet Service Provider. Duties
+  include DNS zone file administration (Bind), Sendmail administration, and Apache
+  virtual host configuration and management.
+• Tier I support for ADSL and web hosting customers.
 
-     gmctop (github.com/jesseward/gmctop)                                 golang
- •
-     Memcache monitor                                                       2014
-       – Locate hot running keys in your Memcache service.
+|06Education
 
-     discogstagger (github.com/jesseward/discogstagger)                   Python
- •
-     Audio metadata tagger.                                                 2010
-       – Uses the discogs.com API to tag and score audio file metadata.
+|04Contestoga College Kitchener, Ontario DIPLOMA, COMPUTER PROGRAMMER
+|04Sep. 2000 - May 2002 • 
+Related courses: relational database design, Systems
+programming (C), Object Oriented Design (Java I, II, III).
 
-     plex-last-fm scrobbler (github.com/jesseward/plex-lastfm-scrobbler)  Python
- •
-     Plugin for Plex Media Server                                           2014
-       – Scrobble music to the last.fm service from your Plex Media Server.
+|06Extracurricular Activity
+
+|04DSoH (Deeper Shades of House) San Jose, California
+|04SYSTEMS ADMINISTRATOR Sep. 2013 - PRESENT
+
+• Gained experience running an online radio station and audio streaming service.
+• System support of the Sourcefabric Airtime online radio management software.
+Operational support of Ubuntu based platform.
+
+|04Tourist Town, Saugeen Shores, Ontario, Canada SOFTWARE DEVELOPER & SYSTEMS
+|04ADMINISTRATOR Feb. 2013 - Dec. 2013
+
+• PHP and Javascript development.  • System administrative duties for the
+Tourist Town web sites. Underlying stack is Linux, Apache, MySQL and PHP.
+
+|04Various open source projects, Everywhere
+|04CONTRIBUTOR GITHUB.COM/JESSEWARD
+
+• Active contributor to numerous open source projects (Google’s GoPacket,
+Discogs API client, the Bottle web framework, Taggolib an audio metadata
+framework) as well as maintainer of multiple personal projects
+(plex-lastfm-scrobbler, discogs-tagger). Current languages of interest are
+Python and Go.

@@ -91,7 +91,7 @@ def display_banner(term):
     sep = getattr(term, color_secondary)(u'-/-')
 
     echo(u'{sep} You have connected to jesseward.com/X BBS. San Jose, California {sep}\r\n'.format(sep=sep))
-    echo(u'{name} / telnet port 49152\r\n'.format(name=highlight(system_bbsname)))
+    echo(u'{name} / telnet port 64738\r\n'.format(name=highlight(system_bbsname)))
     # display on-connect banner (`art_file`)
     map(echo, showart(art_file, encoding=art_encoding, center=True))
 
