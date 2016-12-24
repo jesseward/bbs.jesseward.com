@@ -62,6 +62,11 @@ color_secondary = get_ini(
     section='matrix', key='color_secondary'
 ) or 'green'
 
+#: telnet port from config
+telnet_port = get_ini(
+    section='telnet', key='port'
+)
+
 def display_banner(term):
     """ Display on-connect banner and set a few sequences. """
 
@@ -91,7 +96,8 @@ def display_banner(term):
     sep = getattr(term, color_secondary)(u'-/-')
 
     echo(u'{sep} You have connected to jesseward.com/X BBS. San Jose, California {sep}\r\n'.format(sep=sep))
-    echo(u'{name} / telnet port 64738\r\n'.format(name=highlight(system_bbsname)))
+    echo(u'{name} / telnet port {port}\r\n'.format(name=highlight(system_bbsname),
+         port=highlight(telnet_port)))
     # display on-connect banner (`art_file`)
     map(echo, showart(art_file, encoding=art_encoding, center=True))
 
