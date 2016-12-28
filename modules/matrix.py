@@ -18,7 +18,8 @@ Read all about it in old e-zines.
 import logging
 import os
 
-from x84.bbs import getterminal, get_ini, goto
+
+from x84.bbs import getterminal, get_ini, goto, gosub
 from x84.bbs import echo, showart, syncterm_setfont
 from x84.bbs import User
 from x84.engine import __url__
@@ -67,6 +68,11 @@ telnet_port = get_ini(
     section='telnet', key='port'
 )
 
+#: geo IP banning
+geo_enabled = get_ini(
+    section='geo-check', key='enabled'
+) or False
+
 def display_banner(term):
     """ Display on-connect banner and set a few sequences. """
 
@@ -113,6 +119,7 @@ def display_banner(term):
 
     goto('main-menu')
 
+
 def main(anonymous=False, new=False):
     """
     Script entry point.
@@ -125,16 +132,8 @@ def main(anonymous=False, new=False):
     """
     term = getterminal()
 
+    if geo_enabled:
+        gosub('geo-check')
+
     display_banner(term)
-
     goto('main-menu')
-
-    # do_login will goto/gosub various scripts, if it returns, then
-    # either the user entered 'bye', or had too many failed attempts.
-    do_login(term)
-
-    log.debug('Disconnecting.')
-
-    # it is necessary to provide sufficient time to send any pending
-    # output across the transport before disconnecting.
-    term.inkey(1.5)
